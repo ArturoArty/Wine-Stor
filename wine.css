@@ -1,0 +1,267 @@
+body {
+	background-image:url(f5.jpg);
+	width:100%;
+	margin:0;
+}
+.body{
+	 width: 80%;
+    margin: 0 auto;
+
+}
+header {
+	background-color:#8e8c88;
+	display:flex;
+	flex-wrap: nowrap;
+	height:90px;
+	 justify-content: space-around;
+	 color:#bbac76;
+	 font-weight:bold;
+}
+.cartNav{
+		display:flex;
+	flex-wrap: nowrap;
+
+}
+.iconContainer i {
+    display: flex;
+    color: #5e2534;
+    font-size: 4vw;
+    margin: auto;
+    justify-content: center;
+}
+.iconContainer{
+	height:60px;
+	width:100px;
+	background-color:#8e8c88;
+	margin: 10 px;
+}
+.logo img{
+height:80px;
+}
+nav{
+	width:100%;
+	background-color:#5e2534;
+	display:flex;
+	flex-wrap: wrap;
+  justify-content: space-around;
+  height:55px;
+ 
+  
+
+}
+.li{
+	display:flex;
+   justify-content: space-around;
+	margin:auto;
+	}
+a{
+	text-decoration:none;
+}
+.search {
+    font-size: 4vw;
+	    display: flex;
+}
+.search form{
+	display:flex;
+}
+.search form {
+margin:auto;
+}
+.fa-search{
+	background-color:#5e2534;
+	color:#bbac76;
+	border-radius: 0 11px 11px 0;
+    border: 1px solid #bfba39;
+    font-size: 40vw;
+}
+.iconText{
+	    font-size:16px;
+		text-align:center;
+}
+#searche{
+	border-radius: 11px 0 0 11px;
+    border: 1px solid #bfba39;
+    font-size: 20px;
+	 
+}
+.li a{
+	color:#bbac76;
+	font-weight:bold;
+}
+#bottomimg {
+
+	    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+#RedWithRose{
+    background-color: #ac7e7e;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+	}
+	.bottomCategor{
+		font-size:30px;
+	}
+	.bottomCategorinfo{
+		font-size:12px;
+	}
+	#RedWithRosev a{
+		font-size:16px;
+
+	}
+	#colings img{
+		height:200px;
+		width: 20%;
+	}
+	.collings{
+	flex-wrap:wrap;
+	display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+
+	}
+	#d3, #d2 {
+    position: absolute;
+    top: 180px;
+    left: 530px;
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 17%;
+}
+.rws{
+	display:flex;
+	background-image:url('bac.jpg');
+}
+.rws_img{
+	    width: 150px;
+		margin-left:-30px;
+	}
+	.rws_inf{
+		margin-top:50px;
+	}
+	.bottomCategorlink{
+	    color: #921e1e;
+    position: absolute;
+    top: 730px;
+    font-weight: 700;
+    margin-left: 100px;
+		
+	}
+	.parent_col{
+		width:230px;
+		background-color:white;
+		padding-bottom: 20px;
+	}
+	#cartid {
+	position: absolute;
+    left: 45px;
+    top: -5px;
+	}
+	#cartCont {
+		position:relative;
+	}
+	input {
+    border: 1px solid #bfba39;
+    font-size: 20px;
+	}
+	button{
+	 background-color: #5e2534;
+    color: #bbac76;
+	font-size:19px;
+    border: 2px solid #bfba39;	
+	}
+#bottoming {
+		position:relative;
+	}
+	#glassicon {
+		position: absolute;
+		left:47%;
+   top: 550px;
+    font-size: 20px;
+	}
+#iconRed{
+	color:red;
+}
+  #iconWith{
+	  color:#ffe58b;
+  }
+  #iconShamp{
+	  color:#f4df7a;
+  }
+  footer{
+	     display: flex;
+		 flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #8e8c88;
+    padding: 25px;
+  }
+  #footered {
+	 background-color: #5e2534;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    color: #bbad75;
+}
+  #shopping, .wines{display:none;}
+.fa-3x{   
+ margin-top: -10px;
+}
+#shoppingbot{        font-size: 2vw;
+    display: flex;
+	margin-left:8vw;
+    margin-top: 470px;}
+#shoppingbot p{margin-left:1vw; color:black;}
+#shopping{    position: absolute;
+    width: 42%;
+    height: 500px;
+    border-radius: 1vw;
+    background-color: grey;
+    margin-left: 40%;}
+.itemnumber{    margin-right: 1vw;
+    margin-left: 1vw;}
+#cartmenu i{display:flex;}
+#cartid{margin-left: 7px;}
+.shoppingmenu ul{float:left;   padding-left:15px;
+    margin:1vw auto;}
+.shoppingmenu ul li{padding:4px;   height:3vw;}
+.shoppingmenu ul li p{font-size:14px;color:black;}
+.winename {
+	height:70px;
+}
+@media screen and (max-width: 1210px) {
+    #searche{display:none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .cartNav{flex-wrap:wrap;
+    }  
+	.logo{display:none;
+    }
+	.rws_inf{
+		display:none;
+	}
+	nav{
+		width:80%;
+		position:absolute;
+		top:100px;
+	}
+.bottomCategorlink {
+    top: 685px;
+    margin-left: 38px;
+}
+#glassicon {
+    top: 480px; 
+ }
+	#shopping{
+		top:120px;
+	}
+}

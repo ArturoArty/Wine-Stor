@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset='UTF-8'>
+     <link rel='stylesheet' href='wine.css'>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <title>Wine Store</title>
+	 		<style>		.fa-3x, .fa-2x  {
+    font-size: 1em;
+}
+		</style>
+</head>
+<body>
+    <div class='body'>
+      <header>
+				<div class='logo'>  <a href=''> <img src='111.png'> </a> 
+				</div>
+				<div class='search'> 
+					 <form>
+                <input   id='searche' type="text" name="search" placeholder="Search...                      	">
+				 <a>	<i class="fa fa-search" aria-hidden="true"></i> </a>
+			 </form>
+				</div>
+				<div class='cartNav'> 
+					      <div class='iconContainer' id="d1"> 
+					              <i class="fa fa-sign-in" aria-hidden="true"></i>
+								    <div class='iconText' >  SING IN  </div>
+				          </div>
+						 		
+		<div id="d2">
+		<form action="" method="POST" id="form_login">
+			<input type="email"  placeholder="email" name='email'>
+			<input type="password"  placeholder="password" name='password'>
+			<input type="submit" value="Enter">
+			<button id="b2">x</button>
+			</form>
+		</div>
+		
+		
+		
+						  					      <div id="r1" class='iconContainer'> 
+					             <i class="fa fa-user" aria-hidden="true"></i>
+								    <div class='iconText'> CREAT AN ACCOUNT </div>
+					      </div>
+						 			
+<div id="d3">
+		<form action="" method="POST" id="form">
+			<input type="text" placeholder="Name" name='name'>
+			<input type="text" placeholder="Surname" name='surname'>
+			<input type="email" placeholder="Email" name='email'>
+			<input type="password" placeholder="Password" name='password'>
+			<input type="text" placeholder="Phone Number" name='number'>
+			<input type="submit" value="Enter">
+			<button id="b3">x</button>
+		</form>
+		</div>
+						   <div class='iconContainer' id='cartCont'> 
+					             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							   	<p id='cartid' class='cart'>0</p>
+								    <div class='iconText'> CART</div>
+					      </div>
+<div   id="r4" class='iconContainer'> 
+					             <i class="fa fa-comments" aria-hidden="true"></i>
+								    <div class='iconText'> CONTACT</div>
+									
+					      </div>
+							  <div id="d4">
+					     <form>
+					            <textarea name="text" rows="4" cols="50" value="textarea"> </textarea >
+                           <input type="submit" value="Submit"><br />
+					    </form>
+					  </div>        
+			</div>
+				   </header>
+						<div id="shopping">
+			<div id="images" class="shoppingmenu">
+				<ul>
+					<li class="wines wine1"><img src="r1.png" width="55px"></li>
+					<li class="wines wine2"><img src="r2.png" width="55px"></li>
+					<li class="wines wine3"><img src="r3.png" width="55px"></li>
+					<li class="wines wine4"><img src="r4.png" width="55px"></li>
+					<li class="wines wine5"><img src="w1.png" width="55px"></li>
+					<li class="wines wine6"><img src="w2.png" width="55px"></li>
+					<li class="wines wine7"><img src="w3.png" width="55px"></li>
+					<li class="wines wine8"><img src="w4.png" width="55px"></li>
+					<li class="wines wine9">  <img src="s1.png" width="55px"></li>
+					<li class="wines wine10"><img src="s2.png" width="55px"></li>
+					<li class="wines wine11"><img src="s3.png" width="55px"></li>
+					<li class="wines wine12"><img src="s4.png" width="55px"></li>
+				</ul>			
+			</div>
+			<div id="names" class="shoppingmenu">
+				<ul>
+					<li class="wines wine1"><p>MONTEGIACHI. CHIANTI <br>CLASSICO RISERVA                   </p></li>
+					<li class="wines wine2"><p>2010 ONEHOPE CALIFORNIA <br> PETITE SIRAH                       </p></li>
+					<li class="wines wine3"><p>BARBERA D`ALBA SUPERIORE.  <br>AFFINATO IN BARRIQUE </p></li>
+					<li class="wines wine4"><p>CANTINE DE ORA                                                                  </p></li>
+					<li class="wines wine5"><p> 2008 ONEHOPE CALIFORNIA <br> SAUVIGNON BLANC  </p></li>
+					<li class="wines wine6"><p> 2011 ONEHOPE CALIFORNIA <br> SAUVIGNON BLANC  </p></li>
+					<li class="wines wine7"><p>  2010 ONEHOPE CALIFORNIA  <br>CHARDONNAY          </p></li>
+					<li class="wines wine8"><p> BURGANS  BURGAN <br> ALBARINO                                  </p></li>
+					<li class="wines wine9"><p> 2004 Louis Roederer <br> Brut Rose                          </p></li>
+					<li class="wines wine10"><p>  2010 - CHATEAU DE <br> SEGRIES TAVEL ROSE   </p></li>
+					<li class="wines wine11"><p> 2009 - DOMAINE <br> GIOIELLI ROSE                      </p></li>
+					<li class="wines wine12"><p> 2011 - JANASSE ROSR <br>  VIN DE PAYS                </p></li>
+				</ul>			
+			</div>
+			<div id="prices" class="shoppingmenu">
+				<ul>
+					<li class="wines wine1"><p id="price1">$150 </p><p>$</p> <p class="itemnumber n1">0</p> <button><i class="fa fa-minus fa-2x minus_button1"></i></button><button><i class="fa fa-times fa-3x close_button1"></i></button><button><i class="fa fa-plus fa-2x plus_button1"></i></button></li>
+					<li class="wines wine2"><p id="price2">$130 </p><p>$</p> <p class="itemnumber n2">0</p> <button><i class="fa fa-minus fa-2x minus_button2"></i></button><button><i class="fa fa-times fa-3x close_button2"></i></button><button><i class="fa fa-plus fa-2x plus_button2"></i></button></li>
+					<li class="wines wine3"><p id="price3">$110 </p><p>$</p> <p class="itemnumber n3">0</p> <button><i class="fa fa-minus fa-2x minus_button3"></i></button><button><i class="fa fa-times fa-3x close_button3"></i></button><button><i class="fa fa-plus fa-2x plus_button3"></i></button></li>
+					<li class="wines wine4"><p id="price4">$300 </p><p>$</p> <p class="itemnumber n4">0</p> <button><i class="fa fa-minus fa-2x minus_button4"></i></button><button><i class="fa fa-times fa-3x close_button4"></i></button><button><i class="fa fa-plus fa-2x plus_button4"></i></button></li>
+					<li class="wines wine5"><p id="price5">$136 </p><p>$</p> <p class="itemnumber n5">0</p> <button><i class="fa fa-minus fa-2x minus_button5"></i></button><button><i class="fa fa-times fa-3x close_button5"></i></button><button><i class="fa fa-plus fa-2x plus_button5"></i></button></li>
+					<li class="wines wine6"><p id="price6">$114 </p><p>$</p> <p class="itemnumber n6">0</p> <button><i class="fa fa-minus fa-2x minus_button6"></i></button><button><i class="fa fa-times fa-3x close_button6"></i></button><button><i class="fa fa-plus fa-2x plus_button6"></i></button></li>
+					<li class="wines wine7"><p id="price7">$100 </p><p>$</p> <p class="itemnumber n7">0</p> <button><i class="fa fa-minus fa-2x minus_button7"></i></button><button><i class="fa fa-times fa-3x close_button7"></i></button><button><i class="fa fa-plus fa-2x plus_button7"></i></button></li>
+					<li class="wines wine8"><p id="price8">$80   </p><p>$</p> <p class="itemnumber n8">0</p> <button><i class="fa fa-minus fa-2x minus_button8"></i></button><button><i class="fa fa-times fa-3x close_button8"></i></button><button><i class="fa fa-plus fa-2x plus_button8"></i></button></li>
+					<li class="wines wine9">  <p id="price9">$266</p><p>$</p> <p class="itemnumber n9">0</p> <button><i class="fa fa-minus fa-2x minus_button9"></i></button><button><i class="fa fa-times fa-3x close_button9"></i></button><button><i class="fa fa-plus fa-2x plus_button9"></i></button></li>
+					<li class="wines wine10"><p id="price9">$106</p><p>$</p> <p class="itemnumber n10">0</p> <button><i class="fa fa-minus fa-2x minus_button10"></i></button><button><i class="fa fa-times fa-3x close_button10"></i></button><button><i class="fa fa-plus fa-2x plus_button10"></i></button></li>
+					<li class="wines wine11"><p id="price9">$700</p><p>$</p> <p class="itemnumber n11">0</p> <button><i class="fa fa-minus fa-2x minus_button11"></i></button><button><i class="fa fa-times fa-3x close_button11"></i></button><button><i class="fa fa-plus fa-2x plus_button11"></i></button></li>
+					<li class="wines wine12"><p id="price9">$310</p><p>$</p> <p class="itemnumber n12">0</p> <button><i class="fa fa-minus fa-2x minus_button12"></i></button><button><i class="fa fa-times fa-3x close_button12"></i></button><button><i class="fa fa-plus fa-2x plus_button12"></i></button></li>
+				</ul>
+			</div>
+			<div id="shoppingbot">
+				<p>All Prices - <p  id="totalprice">0</p><p>$</p></p><p>Total - <p id="totalproduct">0</p></p>
+			</div>
+		</div>
+	  <nav>
+						<div class='li'><a href="">BASKET&nbsp</a>          </div>
+						<div class='li'><a href="">DOMESTIC&nbsp</a>     </div>
+						<div class='li'><a href="">FUTURES&nbsp</a>        </div>
+						<div class='li'><a href="">IMPORTED&nbsp</a>    </div>
+						<div class='li'><a href="">KOSHER&nbsp</a>         </div>
+						<div class='li'><a href="">SPIRTS&nbsp</a>            </div>                 
+	  </nav>
+      <div id='bottom'>
+				<div id='bottomimg'>
+						<div id='slider1' class="sliders"><img src=301.jpg > </div>
+						<div id='slider2' class="sliders"><img src=302.jpg  ></div>
+						<div id='slider3' class="sliders"><img src=303.jpg  > </div>
+			    </div>	<div id='glassicon'>	
+				      <i class="fa fa-glass" aria-hidden="true"  id='iconRed'></i>
+						<i class="fa fa-glass" aria-hidden="true"  id='iconWith'></i>
+						<i class="fa fa-glass" aria-hidden="true"  id='iconShamp'></i>
+				    </div>
+				 
+				<div id='RedWithRose'>
+						<div class='rws'><div class='rws_img'><img src='r1.png'></div><div class='rws_inf'><div class='bottomCategor'>RED WINE</div><div class='bottomCategorinfo'><br/>Masecie penatibus gnis dis paerta sdwsa jretswe</div ></div>     <a id='red' class='bottomCategorlink'>VIEW ALL</a>  </div>
+						<div class='rws'><div class='rws_img'><img src='w2.png'></div><div class='rws_inf'><div class='bottomCategor'>WHITE WINE</div><div class='bottomCategorinfo'><br/>Lumsocie penatibus gnis dis paerta sdwsa jretswe.</div ></div ><a id='white' class='bottomCategorlink'>VIEW ALL</a>    </div>
+						<div class='rws'><div class='rws_img'><img src='s3.png'></div><div class='rws_inf'><div class='bottomCategor'>CHAMPAGNE</div><div class='bottomCategorinfo'><br/>Lumsocie penatibus gnis dis paerta sdwsa jretswe.   </div>  </div ><a id='shamp' class='bottomCategorlink'>VIEW ALL</a>  </div>
+				</div>                                                                                                                                                                                                                                                                                                                                                             
+				<div class='collings' id='red_colings'>                                                                                                                                                                                                                                                                                                                   
+	             	<div class='parent_col b1'><img src='r1.png'><div class="winename">MONTEGIACHI. CHIANTI CLASSICO RISERVA                     </div><p>$150 </p><button class="b2 add1">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div>
+	             	<div class='parent_col b2'><img src='r2.png'><div class="winename">2010 ONEHOPE CALIFORNIA PETITE SIRAH                        </div><p>$130 </p><button class="b2 add2">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div> 
+	             	<div class='parent_col b3'><img src='r3.png'><div class="winename">BARBERA D`ALBA SUPERIORE. AFFINATO IN BARRIQUE  </div><p>$110</p><button class="b2 add3">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div>
+					   <div class='parent_col b4'><img src='r4.png'><div class="winename"> CANTINE DE ORA                                                                    </div><p>$300</p><button class="b2 add4">ADD TO CART</button></div>
+				</div>
+				<div class='collings' id='white_colings'>
+	    		         <div class='parent_col b5'><img src='w1.png'><div class="winename">   2008 ONEHOPE CALIFORNIA SAUVIGNON BLANC        </div>  <p>$136</p><button class="b2 add5">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div>	
+				         <div class='parent_col b6'><img src='w2.png'><div class="winename">  2011 ONEHOPE CALIFORNIA SAUVIGNON BLANC         </div>  <p>$114</p><button class="b2 add6">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div> 
+				         <div class='parent_col b7'><img src='w3.png'><div class="winename">   2010 ONEHOPE CALIFORNIA CHARDONNAY                </div>   <p>$100</p><button class="b2 add7">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button> </div>
+						   <div class='parent_col b8'><img src='w4.png'><div class="winename">  BURGANS  BURGAN ALBARINO                                        </div>   <p>$80</p><button  class="b2 add8">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div> 
+				</div>			
+				<div  class='collings' id='shamp_colings'>
+		             	<div class='parent_col b9'><img src='s1.png'><div class="winename"> 2004 Louis Roederer Brut Rose                                            </div>  <p>$266</p><button class="b2 add9">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div>	
+		             	<div class='parent_col b10'><img src='s2.png'><div class="winename">  2010 - CHATEAU DE SEGRIES TAVEL ROSE                    </div> <p>$106</p><button class="b2 add10">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div> 
+		             	<div class='parent_col b11'><img src='s3.png'><div class="winename"> 2009 - DOMAINE GIOIELLI ROSE                                      </div>  <p>$700</p><button class="b2 add11">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div>
+						   <div class='parent_col b12' ><img src='s4.png'><div class="winename"  > 2011 - JANASSE ROSR VIN DE PAYS                              </div>   <p>$310</p><button class="b2 add12">ADD TO CART <i class="fa fa-cart-plus" aria-hidden="true"></i></button></div>
+				</div>
+				<!--<div><input id='seeall' type="submit" value="VIEW ALL"></div>-->
+      </div>
+		<footer>
+	         
+	              <div  id='footLogo'><a href=''> <img src='111.png'> </a> </div>
+			 <address>
+	              <div id='smoltext'> <i class="fa fa-map-marker" aria-hidden="true"></i> 105 Teryan Street <br /> Yerevan, Armenia  </div>
+				    <div id='footphon'> <i class="fa fa-phone" aria-hidden="true"></i> +37488555666 </div>
+					 <div id='footemail'><i class="fa fa-envelope" aria-hidden="true"></i> <a href='artur181920as@gmail.com '>artur181920as@gmail.com  </a>  </div>
+			 </address>
+           
+			<div id='right'>
+					
+			  <h3 > Aboute The Company </h3>
+					  <p >Our task is to deliver you<br>
+					  the best wine in the <br>
+					  shortest possible time</p>  
+			</div>
+		</footer>
+		<div id='footered'><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Wine Store</div>
+
+	 <script src="jquery-3.2.1.min.js"></script>
+        <script src="wine.js"></script>
+</body>
+</html>
